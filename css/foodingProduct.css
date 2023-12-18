@@ -163,7 +163,7 @@ li {
 
 @media (max-width: 998px) {
     .product__content {
-        background-image: url(/image/product/Rectangle\ 2.png);
+        background-image: url('../image/product/Rectangle\ 2.png');
         background-repeat: no-repeat;
         border-radius: 50px;
         height: 350px;
@@ -261,7 +261,7 @@ li {
 
 @media (max-width: 750px) {
     .product__content {
-        background-image: url(/image/product/Rectangle\ 2.png);
+        background-image: url('../image/product/Rectangle\ 2.png');
         background-repeat: no-repeat;
         border-radius: 50px;
         height: 350px;
