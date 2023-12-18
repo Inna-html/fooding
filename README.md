@@ -24,6 +24,10 @@ A large project that mainly includes 5 HTML files and styling using CSS, but the
 
 - and finally we close the pop-up window
 
+## *View the website*
+
+https://inna-html.github.io/fooding/
+
 ## *License*
 
 License [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) Copyright © 2023 Inna-html
