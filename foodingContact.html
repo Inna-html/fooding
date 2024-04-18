@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700,800,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/css/foodingHeader.css">
+    <link rel="stylesheet" href="/css/foodingFooter.css">
+    <link rel="stylesheet" href="/css/foodingContact.css">
+    <link rel="icon" href="/image/header/favicon.ico">
+    <title>Fooding</title>
+    <script defer src="/js/foodingHeader.js"></script>
+    <script defer src="/js/foodingContact.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="header__container">
+
+                <a href="index.html" class="header__logo">
+                    <img src="/image/header/logoHeader.svg" class="header__logo" alt="logo">
+                </a>
+
+                <nav class="header__menu menu">
+                    <div class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__link">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="foodingAbout.html" class="menu__link">About</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="foodingServices.html" class="menu__link">Services</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="foodingProduct.html" class="menu__link">Product</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <button class="icon-menu" type="button">
+                    <span></span>
+                </button>
+
+                <div class="header__contact">
+                    <a href="foodingContact.html" class="header__button button">Contact us</a>
+                </div>
+
+            </div>
+        </header>
+
+        <main class="main">
+
+            <section class="contact-about contact">
+                <div class="contact__container">
+
+                    <div class="contact__content">
+                        <h1 class="header-main__title">
+                            <div class="vector">Contact</div>Us
+                        </h1>
+
+                        <div class="img-size__contact">
+                            <img src="./image/contact/man.png" class="img-size" alt="man-img">
+                        </div>
+                    </div>
+
+                    <form id="form-contact" class="contacts__items form-contact" action="#" method="POST">
+
+                        <div class="items-one">
+
+                            <div class="item-input">
+                                <label class="label">Full Name
+                                    <span class="good-label">Correct</span>
+                                </label> <br>
+                                <div class="input-box">
+                                    <input type="text" class="item contact-name" placeholder="John Doe"
+                                        id="contact-name" pattern="[a-zA-Zа-яА-Я ]+"
+                                        title="The field can contain only letters">
+                                </div>
+                            </div>
+
+                            <div class="item-input">
+                                <label class="label">Phone Number
+                                    <span class="good-label">Correct</span>
+                                </label> <br>
+                                <div class="input-box">
+                                    <input type="number" inputmode="numeric" pattern="[0-9]+" class="item contact-phone"
+                                        placeholder="08012345678" id="contact-phone"
+                                        title="The field can contain only numbers">
+                                </div>
+                            </div>
+
+                            <div class="item-input">
+                                <label class="label">Email
+                                    <span class="good-label">Correct</span>
+                                </label>
+                                <div class="input-box">
+                                    <input type="email" class="item contact-email" placeholder="johndoe@gmail.com"
+                                        id="contact-email"
+                                        title="The field contains the username @ and the email address">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="items-two">
+
+                            <div class="item-input">
+                                <label class="label">Subject
+                                    <span class="good-label">Correct</span>
+                                </label>
+                                <div class="input-box">
+                                    <input type="text" class="item contact-subject"
+                                        placeholder="Enter subject of enquiry" id="contact-sub">
+                                </div>
+                            </div>
+
+                            <div class="item-input">
+                                <label class="label">Enquiry Body
+                                    <span class="good-label">Correct</span>
+                                </label>
+                                <div class="input-box">
+                                    <textarea class="item contact-message textarea__length" cols="30" rows="10"
+                                        maxlength="250" placeholder="johndoe@gmail.com" id="contact-message"></textarea>
+                                </div>
+                                <p class="textarea__length"></p>
+                                <div class="textarea__counter"> <span></span> </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="contact-main__button">
+                            <button id="open-modal-btn" type="submit" class="contact-send">
+                                <div class="send-contact">Send</div>
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </section>
+
+            <div id="my-modal" class="container__send modal ">
+                <div class="content__send modal-box">
+                    <div class="close" id="close-my-modal-btn">X</div>
+
+                    <div class="img__container">
+                        <img class="img_send" src="/image/Vector-send.png" alt="vector">
+                    </div>
+                    <h4 class="item-values__title">
+                        Awesome!
+                    </h4>
+                    <div class="item-value__text">
+                        Thank you for your message. <br>
+                        We will get back to you via a call/sms <br>
+                        or the email address you submited.
+                    </div>
+
+                    <div class="send-action__button">
+                        <button class="button__send" id="close-my-modal-btn-two">Close window</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer__main main-footer">
+                <div class="main-footer__container">
+
+                    <div class="main-footer__colomn">
+                        <a href="" class="main-footer__logo">
+                            <img src="/image/footer/logoFooter.svg" alt="logo">
+                        </a>
+                        <div class="main-footer__text text">
+                            <a href="" class="main-footer__year">
+                                <img src="/image/footer/2022.svg" alt="2022">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="main-footer__adress">
+                        <div class="main-footer__adres">
+                            1, Awoniyi Elemo Street, Ajao Estate, <br>
+                            off Murtala Muhammed Int. Airport, <br>
+                            Lagos State.
+                        </div>
+                        <div class="main-footer__tel">
+                            09156218239, 08035024464
+                        </div>
+                    </div>
+
+                    <div class="main-footer__contact">
+                        <div class="main-footer__mail">
+                            info@foodingtrading.com
+                        </div>
+                        <div class="main-footer__social social">
+                            <a href="" class="social__link">
+                                <img src="/image/footer/inst.svg" alt="">
+                            </a>
+                            <a href="" class="social__link">
+                                <img src="/image/footer/twitter.svg" alt="">
+                            </a>
+                            <a href="" class="social__link">
+                                <img src="/image/footer/in.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="main-footer__official">
+                            officialfoodingtrading
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
