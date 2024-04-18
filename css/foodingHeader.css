@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     overflow: clip;
 
-    border: 10px solid darkblue;
+    /* border: 10px solid darkblue; */
 }
 
 .main {
@@ -28,7 +28,7 @@ body {
     flex-direction: column;
     margin: 0 auto;
 
-    border: 2px solid rgb(13, 255, 0);
+    /* border: 2px solid rgb(13, 255, 0); */
 }
 
 [class*="__container"] {
@@ -36,7 +36,7 @@ body {
     margin: 0 auto;
     padding: 0px;
 
-    border: 1px solid palevioletred;
+    /* border: 1px solid palevioletred; */
 }
 
 .header__button button {
@@ -65,7 +65,6 @@ body {
 
 .header__container {
     margin: 0 auto;
-    background: #2a21216d;
 
     display: flex;
     align-items: center;
