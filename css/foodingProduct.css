@@ -1,6 +1,6 @@
 .vector {
     display: inline;
-    background-image: url(../image/contact/Vector.png);
+    background-image: url('../image/contact/Vector.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background: #ffffff; */
+    background: #ffffff;
 }
 
 .product__main {
@@ -43,11 +43,11 @@
 }
 
 .product__content {
-    background-image: url(../image/product/Rectangle\ 2.png);
+    background-image: url('../image/product/Rectangle\ 2.png');
     background-repeat: no-repeat;
     border-radius: 50px;
     height: 350px;
-    width: 1190px;
+    max-width: 1190px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,20 +162,24 @@ li {
 /* ######## media ################################### */
 
 @media (max-width: 998px) {
+    .product__container {
+        padding: 0;
+        display: flex;
+    }
     .product__content {
-        background-image: url('../image/product/Rectangle\ 2.png');
-        background-repeat: no-repeat;
         border-radius: 50px;
         height: 350px;
-        width: 600px;
+        max-width: 800px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0 20px;
     }
 
     .shadow {
         border-radius: 50px;
-        width: 640px;
+        max-width: 840px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -261,11 +265,9 @@ li {
 
 @media (max-width: 750px) {
     .product__content {
-        background-image: url('../image/product/Rectangle\ 2.png');
-        background-repeat: no-repeat;
         border-radius: 50px;
         height: 350px;
-        width: 330px;
+        max-width: 700px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -273,7 +275,7 @@ li {
 
     .shadow {
         border-radius: 50px;
-        width: 350px;
+        max-width: 740px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -353,5 +355,12 @@ li {
 
     li {
         list-style-type: disc;
+    }
+}
+
+@media (max-width: 608px) {
+    .product__content {
+        max-width: 400px;
+        width: 100%;
     }
 }

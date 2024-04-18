@@ -1,9 +1,13 @@
+html,
 body {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     background: #ffffff;
     font-family: "Montserrat";
     font-weight: 300;
     color: #060606;
+    padding: 0;
+    margin: 0;
 }
 
 .wrapper {
@@ -11,16 +15,28 @@ body {
     display: flex;
     flex-direction: column;
     overflow: clip;
+
+    border: 10px solid darkblue;
 }
 
-.page {
+.main {
     flex: 1 1 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+
+    border: 2px solid rgb(13, 255, 0);
 }
 
 [class*="__container"] {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0px 15px;
+    padding: 0px;
+
+    border: 1px solid palevioletred;
 }
 
 .header__button button {
@@ -33,25 +49,31 @@ body {
     display: inline-block;
     text-align: center;
     letter-spacing: 2px;
+    flex-wrap: nowrap;
 }
 
-/*============================== HEADER ===================================================*/
 
+/*============================== HEADER ===================================================*/
 .header {
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
     background: hsl(0, 0%, 100%);
-    z-index: 99;
+    z-index: 10;
 }
 
 .header__container {
+    margin: 0 auto;
+    background: #2a21216d;
+
     display: flex;
-    column-gap: 25px;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    column-gap: 25px;
     min-height: 125px;
-    padding: 5px 5px;
+    padding: 0px 10px;
 }
 
 .header__menu {
@@ -63,14 +85,10 @@ body {
 .menu__list {
     display: flex;
     justify-content: flex-end;
-}
-
-.menu__list {
     column-gap: 1px;
     list-style-type: none;
     flex-wrap: wrap;
     row-gap: 3px;
-    display: inline-flex;
     text-decoration: none;
     font-size: small;
 }
@@ -111,14 +129,17 @@ a {
 .header__button {
     color: #060606;
     font-weight: 600;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .header__contact {
-    flex: 0 0 auto;
     border: 1px solid #8AC653;
     background: #fbfbfb;
     border-radius: 25px;
     padding: 10px 30px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .header__contact:hover {
@@ -149,9 +170,16 @@ a {
     border: none;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
+    .header__container {
+        padding: 0 15px;
+        height: 90px;
+    }
+
     .header__contact {
         padding: 5px 10px;
+        margin-right: 25px;
+        margin-left: 0px;
     }
 
     .menu__list {
@@ -163,18 +191,16 @@ a {
         text-align: right;
     }
 
-    .header__container {
-        min-height: 90px;
-    }
+
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 780px) {
     .icon-menu {
         display: block;
         flex: 0 0 30px;
         height: 18px;
         position: relative;
-        padding-right: 25px;
+        margin-right: 0px;
         z-index: 5;
     }
 
@@ -244,7 +270,7 @@ a {
     .menu__list {
         row-gap: 10px;
         flex-direction: column;
-
+        padding-right: 40px;
     }
 
     .menu__link {
@@ -272,13 +298,15 @@ a {
     }
 
     .header__contact {
-        padding: 2px;
+        padding: 5px 10px;
         gap: 5px;
+        display: flex;
+        flex-wrap: nowrap;
     }
 
     .header__button {
         font-weight: 400;
-
+        flex-wrap: nowrap;
     }
 }
 

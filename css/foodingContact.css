@@ -1,6 +1,6 @@
 .vector {
     display: inline;
-    background-image: url(../image/contact/Vector.png);
+    background-image: url('../image/contact/Vector.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,6 +37,7 @@
 .img-size__contact {
     display: flex;
     justify-content: flex-end;
+    max-width: 1200px;
 }
 
 .img-size {
@@ -62,7 +63,6 @@
 
 .item-input {
     margin-top: 22px;
-    
 }
 
 .label {
@@ -81,7 +81,7 @@
     border: none;
     margin: 5px 0;
     font-size: 22px;
-    
+
 }
 
 .item::placeholder {
@@ -156,15 +156,16 @@
 
 /* ######## media ###################################### */
 
-@media (max-width: 998px) {
+@media (max-width: 1025.98px) {
     .contact__content {
         background: #F8F8F8;
-        margin-top: 100px;
+        margin-top: 140px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 20px;
         flex-direction: column;
+        width: 100%;
     }
 
     .header-main__title {
@@ -173,46 +174,69 @@
     }
     
     .items-one {
-        margin-right: 0px;
+        margin: 0px;
     }
-}
-
-@media (max-width: 668px) {
-    .header-main__title {
-        font-size: 40px;
-        line-height: 47px;
-    }
-
-    label {
-        color: #191819;
-        font-size: 14px;
-        line-height: 36px;
-    }
-
-    .item {
-        width: 350px;
-        height: 56px;
-    }
-
-    .item::placeholder {
-        color: #56565661;
-        font-size: 14px;
-    }
-
-    .contact-send {
-        font-size: 15px;
-    }
-
     .send-contact {
         padding: 10px 80px;
         width: 200px;
     }
 }
 
-@media (max-width: 369px) {
+@media (max-width: 668px) {
+    .contact__content {
+        margin-top: 120px;
+    }
+    .header-main__title {
+        font-size: 40px;
+        line-height: 47px;
+    }
+    .items-one {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .label {
+        color: #191819;
+        font-size: 14px;
+        line-height: 36px;
+    }
     .item {
-        width: 300px;
+        width: 100%;
         height: 56px;
+    }
+    .item::placeholder {
+        color: #56565661;
+        font-size: 14px;
+    }
+    .items-two {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .contact-main__button {
+        padding: 0 20px;
+    }
+    .contact-send {
+        font-size: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .item {
+        min-width: 300px;
+        height: 56px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .items-one {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .contact-send {
+        min-width: 300px;
+        margin: 0 20px;
     }
 }
 
